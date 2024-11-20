@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="sazzad eco-web">
+    <title>index eco-web</title>
+    
+    <!-- font awesome cdn (use icon) https://cdnjs.com/libraries/font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font awesome cdn -->
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .signup{
+            margin-top: 30px;
+            margin-bottom: 30px;
+            width: 450px;
+            height: 500px;
+            padding: 20px;
+        }
+        .signup .d1 input{
+            width: 100%;
+            padding: 12px;
+            border-radius: var(--border-radius);
+            border: 1px solid var(--fifth-clr);
+        }
+        .login_btn{
+            width: 100%;
+            padding: 12px;
+            border-radius: var(--border-radius);
+            background-color: var(--secondary-clr);
+            color: var(--font-clr);
+            font-size: 16px;
+        }
+        .signup .p2{
+            
+            font-size: 15px;
+        }
+        .signup h2{
+            text-align: center;
+            color: var(--secondary-clr);
+        }
+        .signup .p3 a{
+            color: var(--secondary-clr);
+        }
+    </style>
+
+<link rel="stylesheet" href="moblie.css">
+</head>
+
+<body>
+<!-- -------------- navbar starts ------------------->
+    <nav>
+        <div class="navbar flex-space-between">
+        <div class="logo">
+            <h1 style="font-size: 35px;"><span style="color: var(--secondary-clr);"><i class="fa-solid fa-cart-shopping"></i></span><span style="color: var(--font-clr);">Easy</span><span style="color: var(--secondary-clr);">Shop</span></h1>
+        </div>
+        <div class="searchbar flex-space-around">
+            <input type="search" placeholder="You want to buy....">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+            <div class="manu ">
+            <ul class="nav-up flex-space-around">
+                <li class="nav-list"><a href="#" class="nav-link"><span style="color: var(--secondary-clr);"><i class="fa-solid fa-cart-plus fa-xl"></i></span> 0 Items</a></li>
+                <li class="nav-list"><a href="#" class="nav-link">Login <span style="color: var(--secondary-clr);">|</span> Signup</a>
+                </li>
+                <a href="#" class="nav-link"><button class="profile"><i class="fa-solid fa-user"></i></button></a>
+            </ul>
+            </div>
+        </div>
+
+        <div class="submanu ">
+        <div class="nav-low flex-space-between">
+            <div class="category"><a class="nav-link" href="#"><span style="color: var(--primary-clr);"><i class="fa-solid fa-bars"></i></span> All Category <span><i class="fa-solid fa-chevron-down fa-2xs"></i></span></a> 
+                <div class="categoris">
+                    <ul>
+                        <li><a class="nav-link" href="#"><div>Man Lifestyle </div><div class="right_arow"><i class="fa-solid fa-angle-right fa-2xs"></i></div></a></li>
+                        <li><a class="nav-link" href="#">Woman Lifestyle</a></li>
+                        <li><a class="nav-link" href="#">Mobiles & Devices</a></li>
+                        <li><a class="nav-link" href="#">IT Products</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="list flex-space-between nav-up">
+                <div class="nav-list"><a href="index.html" class="nav-link">Home</a></div>
+                <div class="nav-list"><a href="#" class="nav-link">Flashsale</a></div>
+                <div class="nav-list"><a href="#" class="nav-link">Help</a></div>
+            </div>
+            <!-- <li class="nav-list"><a href="#" class="nav-link"><span><i class="fa-solid fa-cart-shopping"></i></span> 0 Items</a></li> -->
+            <div class="nav-list"><span style="color: var(--primary-clr);"><i class="fa-solid fa-phone-volume"></i></span> +8801625245585</div>
+        </div>
+    </div>
+    </nav>
+
+<!--------------------- navbar end -------------------->
+
+<!--------- moblie navbar top start --------->
+<div class="m-nav-top">
+    <div class="m-nav-top-items">
+        <div class="m-nav">
+            <div class="m-logo ">
+                <h1 style="font-size: 35px;"><span style="color: var(--secondary-clr);"><i class="fa-solid fa-cart-shopping"></i></span><span style="color: var(--font-clr);">Easy</span><span style="color: var(--secondary-clr);">Shop</span></h1>
+            </div>
+            <div class="m-deliver flex-center">
+                <div class="m-location">
+                    <span><i class="fa-solid fa-location-dot fa-xl"></i></span>
+                </div>
+                <div class="m-text">
+                    <p>Deliver to:</p>
+                    <p>Dhaka</p>
+                </div>
+            </div>
+        </div>
+        <div class="m-search">
+            <div class="m-src">
+                <input type="text" placeholder="Search Easyshop">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--------- moblie navbar top end --------->
+
+<main class="flex_center">
+    
+    <div class="signup card ">
+        <form action="" class="">
+            <h2>Create EasyShop Account</h2><br><br>
+            <div class="d1">
+            <label for="name">
+                <input type="text" placeholder="Name">
+            </label><br><br>
+            <label for="email">
+                <input type="text" placeholder="Phone or E-mail">
+            </label><br><br>
+            <label for="password">
+                <input type="password" placeholder="Password">
+            </label><br><br>
+            <label for="password">
+                <input type="password" placeholder="Confirm Password">
+            </label><br><br>
+            </div>
+            <div class="p2">
+                <label for="select">
+                <input type="checkbox" id="select" name="select">
+                By signing up you agree to our tarms ans condistion
+            </label><br>
+            </div>
+            
+            <br><br>
+            <button class="login_btn">Signup</button><br><br>
+            <p class="p3">Already have an account? <a href="login.html"><b>Login</b></a></p>
+        </form>
+    </div>
+
+</main>
+
+
+<!-------------------------- footer starts ---------------------->
+<footer>
+    <div class="footer flex">
+        <div class="follow">
+            <h1 style="font-size: 40px;"><span style="color: var(--primary-clr);"><i class="fa-solid fa-cart-shopping"></i></span><span style="color: aliceblue;">Easy</span><span style="color: var(--primary-clr);">Shop</span></h1><br>
+            <ul class="flex">
+                <li><a href=""><button><span><i class="fa-brands fa-facebook-f fa-2xl"></i></span></button></a></li>
+                <li><a href=""><button><span><i class="fa-brands fa-instagram fa-2xl"></i></span></button></a></li>
+                <li><a href="#"><button><span><i class="fa-brands fa-twitter fa-2xl"></i></span></button></a></li>
+                <li><a href="#"><button><span><i class="fa-brands fa-whatsapp fa-2xl"></i></span></button></a></li>
+            </ul>
+        </div>
+        <div class="information">
+            <ul>
+                <p><b>INFORMATINON</b></p><br>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Warranty Policy</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Return & Retund Policy</a></li>
+                <li><a href="#">Oder History</a></li>
+                <li><a href="#">Track Oder</a></li>
+            </ul>
+        </div>
+        <div class="contact">
+            <ul>
+                <p><b>CONTACT US</b></p><br>
+                <li><b>Address:</b> <br>Corporate Office: Road no-1A, House No-32, Baridhara J Block, Dhaka.</li>
+                <li><b>Mobile :</b> <br>+8801625245585 (9:30 AM to 10:00 PM)</li>
+                <li><b>E-mail :</b> <br>easyshop@gmail.com</li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+<!--------------------- footer end ----------------->
+
+
+<!---------------- moblie navbar buttom start ------------>
+    
+<div class="m-nav-btm">
+    <div class="m-nav-btm-items">
+        <div class="m-menu">
+            <button><span style="color: var(--secondary-clr);"><i class="fa-solid fa-bars fa-2xl"></i></span>
+            </button>
+        </div>
+        <div class="m-percent">
+            <!-- <button><span><i class="fa-solid fa-percent"></i></span></button> -->
+            <button><img src="pic/m-percent.png" alt=""></button>
+        </div>
+        <div class="m-home">
+            <button class="m-home-btn"><span><i class="fa-solid fa-house fa-xl"></i></span></button>
+        </div>
+        <div class="m-card">
+            <button><span style="color: var(--secondary-clr);"><i class="fa-solid fa-cart-plus fa-2xl"></i></span></button>
+        </div>
+        <div class="m-profile">
+            <button><img src="pic/profile-1.png" alt=""></button>
+        </div>
+    </div>
+</div>
+<!---------------- moblie navbar buttom end ------------>
+
+
+</body>
+</html>

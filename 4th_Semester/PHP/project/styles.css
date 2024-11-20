@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.content {
+    width: 100%;
+    /* max-width: 650px; */
+    margin: 0 auto;
+    padding: 50px;
+}
+
+h1 {
+    text-align: center;
+}
+.hdline{
+    color: #1c8f20;
+    font-size: 50px;
+    
+}
+
+
+input {
+    /* width: calc(100% - 10px); */
+    width: 100%;
+    padding: 9px;
+    margin-bottom: 10px;
+    border: 2px solid #349437;
+    border-radius: 5px;
+    
+}
+
+
+
+button {
+    padding: 8px 20px;
+    border-radius: 8px !important;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #349437;
+}
+
+.book-item {
+    margin-bottom: 10px;
+    padding: 12px;
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    h3{
+        color: green;
+    }
+}
+
+.book-item .dlt-btn {
+    background-color: #f44336;
+    float: inline-end;
+}
+
+.book-item .dlt-btn:hover {
+    background-color: #d32f2f;
+}
+
+.book-item .edit-btn{
+    margin-right: 10px;
+    text-decoration: none;
+    padding: 8px 20px;
+    border-radius: 8px !important;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    float: inline-end;
+}
+.book-item .edit-btn:hover {
+    background-color: #349437;
+}

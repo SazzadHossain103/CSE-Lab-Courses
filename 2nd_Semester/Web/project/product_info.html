@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="sazzad eco-web">
+    <title>index eco-web</title>
+    
+    <!-- font awesome cdn (use icon) https://cdnjs.com/libraries/font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font awesome cdn -->
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .product_info{
+            width: 90%;
+            height: 70vh;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            display: flex;
+        }
+        .pdt_img{
+            width: 40%;
+            overflow: hidden;
+        }
+        .P_img{
+            width: cover;
+            /* overflow: hidden; */
+            transition: all ease 3s;
+        }
+        .p_img:hover{
+            scale: 1.2;
+            cursor: zoom-in;
+        }
+
+        .pdt_dtl{
+            width: 35%;
+            margin-left: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .pdt_price{
+            gap: 10px;
+            align-items: center;
+        }
+        .pdt_price p{
+            font-size: 24px;
+            font-weight: 500;
+        }
+        .pdt_price del{
+            text-decoration: line-through;
+        }
+        .pdt_price mark{
+            padding: 5px;
+            border-radius: 5px;
+        }
+        .pdt_delivery{
+            width: 25%;
+        }
+        
+        .pdt_btn button{
+            background-color: var(--primary-clr);
+            color: var(--font-clr);
+            border-radius: 5px;
+            width: 35%;
+            height: 45px;
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+
+<body>
+<!-- -------------- navbar starts ------------------->
+    <nav>
+        <div class="navbar flex-space-between">
+        <div class="logo">
+            <h1>LOGO</h1>
+        </div>
+        <div class="searchbar flex-space-around">
+            <input type="search" placeholder="You want to buy....">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+            <div class="manu ">
+            <ul class="nav-up flex-space-around">
+                <li class="nav-list"><a href="#" class="nav-link"><span style="color: var(--secondary-clr);"><i class="fa-solid fa-cart-plus fa-xl"></i></span> 0 Items</a></li>
+                <li class="nav-list"><a href="#" class="nav-link">Login <span style="color: var(--secondary-clr);">|</span> Signup</a>
+                </li>
+                <a href="#" class="nav-link"><button class="profile"><i class="fa-solid fa-user"></i></button></a>
+            </ul>
+            </div>
+        </div>
+
+        <div class="submanu ">
+        <div class="nav-low flex-space-between">
+            <div class="category"><a class="nav-link" href="#"><span style="color: var(--primary-clr);"><i class="fa-solid fa-bars"></i></span> All Category <span><i class="fa-solid fa-chevron-down fa-2xs"></i></span></a> 
+                <div class="categoris">
+                    <ul>
+                        <li><a class="nav-link" href="#"><div>Man Lifestyle </div><div class="right_arow"><i class="fa-solid fa-angle-right fa-2xs"></i></div></a></li>
+                        <li><a class="nav-link" href="#">Woman Lifestyle</a></li>
+                        <li><a class="nav-link" href="#">Mobiles & Devices</a></li>
+                        <li><a class="nav-link" href="#">IT Products</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="list flex-space-between nav-up">
+                <div class="nav-list"><a href="index.html" class="nav-link">Home</a></div>
+                <div class="nav-list"><a href="#" class="nav-link">Flashsale</a></div>
+                <div class="nav-list"><a href="#" class="nav-link">Help</a></div>
+            </div>
+            <!-- <li class="nav-list"><a href="#" class="nav-link"><span><i class="fa-solid fa-cart-shopping"></i></span> 0 Items</a></li> -->
+            <div class="nav-list"><span style="color: var(--primary-clr);"><i class="fa-solid fa-phone-volume"></i></span> +8801625245585</div>
+        </div>
+    </div>
+    </nav>
+
+<!--------------------- navbar end -------------------->
+
+
+<main class="flex_center">
+    
+    <div class="product_info card">
+        <div class="pdt_img">
+            <div class="p_img">
+                <img src="pic/p-4.jpg" alt="">
+            </div>
+            <div class="img_glry"></div>
+        </div>
+        <div class="pdt_dtl">
+            <p>name</p>
+            <hr>
+            <div class="pdt">
+                <div class="d1">
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span>(0 reviews)</span>
+                    <p>Brand : No Brand</p>
+                </div>
+                <div class="d2">
+                    <span><i class="fa-solid fa-share-nodes"></i></span>
+                    <span><i class="fa-regular fa-heart"></i></span>
+                </div>
+            </div>
+            <hr>
+            <div class="pdt_price flex">
+                <p>300 Tk</p>
+                <del>350 TK</del>
+                <mark>20 % Off</mark>
+            </div>
+            <hr>
+            <div class="size">
+                <label for="size">Size :
+                    <input type="radio" name="size">
+                    <span>S</span>
+                    <input type="radio" name="size">
+                    <span>M</span>
+                    <input type="radio" name="size">
+                    <span>L</span>
+                    <input type="radio" name="size">
+                    <span>XL</span>
+                </label>
+            </div>
+            <hr>
+            <div class="quantity"></div>
+            <hr>
+            <div class="pdt_btn flex-space-around">
+                <button class="pdt_btn_addcard">Add to card</button>
+                <button class="pdt_btn_Buy">Buy Now</button>
+            </div>
+        </div>
+        <div class="pdt_delivery"></div>
+    </div>
+
+</main>
+
+
+<!-------------------------- footer starts ---------------------->
+<footer>
+    <div class="footer flex">
+        <div class="follow">
+            <h1 style="font-size: 40px;"><span style="color: var(--primary-clr);"><i class="fa-solid fa-cart-shopping"></i></span><span style="color: aliceblue;">Easy</span><span style="color: var(--primary-clr);">Shop</span></h1><br>
+            <ul class="flex">
+                <li><a href=""><button><span><i class="fa-brands fa-facebook-f fa-2xl"></i></span></button></a></li>
+                <li><a href=""><button><span><i class="fa-brands fa-instagram fa-2xl"></i></span></button></a></li>
+                <li><a href="#"><button><span><i class="fa-brands fa-twitter fa-2xl"></i></span></button></a></li>
+                <li><a href="#"><button><span><i class="fa-brands fa-whatsapp fa-2xl"></i></span></button></a></li>
+            </ul>
+        </div>
+        <div class="information">
+            <ul>
+                <p><b>INFORMATINON</b></p><br>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Warranty Policy</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Return & Retund Policy</a></li>
+                <li><a href="#">Oder History</a></li>
+                <li><a href="#">Track Oder</a></li>
+            </ul>
+        </div>
+        <div class="contact">
+            <ul>
+                <p><b>CONTACT US</b></p><br>
+                <li><b>Address:</b> <br>Corporate Office: Road no-1A, House No-32, Baridhara J Block, Dhaka.</li>
+                <li><b>Mobile :</b> <br>+8801625245585 (9:30 AM to 10:00 PM)</li>
+                <li><b>E-mail :</b> <br>easyshop@gmail.com</li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+<!--------------------- footer end ----------------->
+
+</body>
+</html>
